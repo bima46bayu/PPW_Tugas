@@ -79,4 +79,7 @@ class ControllerBuku extends Controller
         ]);
         return redirect('/buku');
     }
+    public function __construct(){
+        $this->middleware('auth');
+    }    
 }
